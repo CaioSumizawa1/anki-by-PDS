@@ -8,8 +8,18 @@
     <title>Tela Enki</title>
 </head>
 <body>
-    <div class="container"></div>
-    <input type="text" id="inputVogal" placeholder="Digite a resposta">
+    <div class="correct-feedback" id="correct-feedback">Correto!</div>
+    
+    <div class="container" id="vogal-container"></div>
+    <input type="text" id="inputVogal" placeholder="Digite a resposta" autocomplete="off">
+    
+    <div class="popup-overlay" id="popup-overlay">
+        <div class="popup" id="popup">
+            <h2 id="popup-title">Resposta Incorreta</h2>
+            <p id="popup-message"></p>
+            <button class="popup-button" id="popup-button">Tentar Novamente</button>
+        </div>
+    </div>
     <script src="numeros.js"></script>
 </body>
 </html>
